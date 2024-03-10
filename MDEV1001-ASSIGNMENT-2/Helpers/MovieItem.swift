@@ -42,7 +42,7 @@ struct MovieItemView: View {
             HStack(spacing: 0) {
                 Image(systemName: "star.fill")
                                 .foregroundColor(.yellow)
-                                .padding(.trailing, 0)
+                                .padding(.trailing, 2)
                 
                 Text(item.criticsRating ?? "7.8")
                     .fontWeight(.regular)

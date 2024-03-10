@@ -8,9 +8,28 @@
 import SwiftUI
 
 struct test: View {
+    
+//    let dataImporter = DataImporter()
+
+//    var abc = ["1", "2", "3"]
+//    var items2 = [ItemData(id: "1", name: "aaa"), ItemData(id: "2", name: "bbb")]
+
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Hello, World!")
+            ForEach(items2, id: \.self) { item in
+                Text("omo")
+            }
+        }
+//        .onAppear {
+//                        preloadData()
+//                    }
     }
+    
+//    func preloadData() {
+//            dataImporter.preloadData()
+//        }
 }
 
 #Preview {
